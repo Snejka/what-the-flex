@@ -36,8 +36,11 @@ a {
 .elements {
   display: flex;
   flex-wrap: wrap;
+  /* Tupe of alignment of the elements in that extra space */
+  justify-content: center;
 }
 
 .item {
-  flex: 1 1 calc(33.33% - 20px);
+  /* 0 meand do nothing with extra space */
+  flex: 0 1 calc(33.33% - 20px);
 }
